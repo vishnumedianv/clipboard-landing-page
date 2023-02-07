@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
+
+* {
+  font-family: "Bai Jamjuree", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  background: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+}
+
+.wrapper1,
+.wrapper2,
+.wrapper3,
+.wrapper4,
+.wrapper5 {
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.wrapper1 div,
+.wrapper3 div,
+.wrapper4 div {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+}
+
+p,
+.link {
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+}
+
+.link:hover {
+  cursor: pointer;
+  color: var(--Strong-Cyan);
+}
+
+svg {
+  fill: #4c545c;
+}
+svg:hover {
+  cursor: pointer;
+  fill: var(--Strong-Cyan);
+}
+
+svg path {
+  fill: inherit !important;
+}
+.description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* wrapper2 */
+.w2-content {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.w2-img {
+  width: 50%;
+}
+
+.computer-img {
+  width: 100%;
+}
+
+.w2-d {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.w2-d div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+}
+
+/* wrapper 3 */
+
+.device-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.device {
+  width: 100%;
+}
+
+/* wrapper 4 */
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+  flex-direction: row;
+  width: 80%;
+}
+
+.category div {
+  min-width: 200px;
+  max-width: 33%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.brands {
+  gap: 40px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.brands div {
+  width: calc(100% / 6);
+  min-width: 50px;
+}
+.brand-logo {
+  width: 100%;
+}
+/* footer */
+
+.footer {
+  margin-top: 50px;
+  padding: 30px 0;
+  width: 100%;
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer div {
+  height: 60%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer div div {
+  align-items: start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-logo {
+  height: 50px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+/* buttons */
+.button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ios:hover,
+.mac:hover {
+  cursor: pointer;
+  filter: brightness(120%);
+}
+
+.ios {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: white;
+  border-radius: 20px;
+  background-color: var(--Strong-Cyan);
+  border: none;
+  box-shadow: inset 0 -3px 1px hsl(171, 60%, 32%);
+  transition: all 0.2s;
+}
+
+.mac {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  box-shadow: inset 0 -3px 1px hsl(233, 51%, 51%);
+  background-color: var(--Light-Blue);
+  transition: all 0.2s;
+}
+
+/* fonts */
+h3 {
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    background: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .w2-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .w2-d {
+    width: 80%;
+  }
+
+  .w2-d div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer div {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .footer div div {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .wrapper4 div {
+    width: 100%;
+  }
+  .brands {
+    flex-direction: column;
+  }
+
+  .brands div {
+    width: 100px;
+  }
+}
